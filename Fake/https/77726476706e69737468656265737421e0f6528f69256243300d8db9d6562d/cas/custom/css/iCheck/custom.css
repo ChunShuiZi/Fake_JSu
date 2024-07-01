@@ -1,0 +1,280 @@
+/* iCheck plugin Square skin, green
+----------------------------------- */
+.icheckbox_square-green,
+.iradio_square-green {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background: url(green.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_square-green {
+    background-position: 0 0;
+}
+.icheckbox_square-green.hover {
+    background-position: -24px 0;
+}
+.icheckbox_square-green.checked {
+    background-position: -48px 0;
+}
+.icheckbox_square-green.disabled {
+    background-position: -72px 0;
+    cursor: default;
+}
+.icheckbox_square-green.checked.disabled {
+    background-position: -96px 0;
+}
+
+.iradio_square-green {
+    background-position: -120px 0;
+}
+.iradio_square-green.hover {
+    background-position: -144px 0;
+}
+.iradio_square-green.checked {
+    background-position: -168px 0;
+}
+.iradio_square-green.disabled {
+    background-position: -192px 0;
+    cursor: default;
+}
+.iradio_square-green.checked.disabled {
+    background-position: -216px 0;
+}
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    .icheckbox_square-green,
+    .iradio_square-green {
+        background-image: url(green@2x.png);
+        -webkit-background-size: 240px 24px;
+        background-size: 240px 24px;
+    }
+}
+
+
+
+
+/*定制代码*/
+.switchingbox{
+    box-sizing: border-box;  
+    border: 1px solid #fff;
+    border-radius: 5px;
+    line-height: 38px;
+    color: #fff;
+    font-size: 16px;
+	float: right;
+	margin-top: 30px;
+	cursor: pointer;
+}
+.switchingbox select{
+	  background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+	  height: 38px;
+    line-height: 38px;
+}
+.switchingbox .language{
+	  background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+	  height: 38px;
+    line-height: 38px;
+    width: 60px;
+	  display: -webkit-inline-box;
+}
+.switchingbox select#language:hover{
+	color:#1ab394;
+	background-color:#fff;
+	-o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+.switchingbox .language:hover{
+	color:#1ab394;
+	background-color:#fff;
+	-o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+.switchingbox:hover{
+	color:#1ab394;
+	background-color:#fff;
+	-o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+.headerbox{
+	width:1200px;
+	margin:0px auto;
+	padding: 20px 0px;
+}
+
+.clearfix{
+	clear:both;
+}
+.headerbg{
+	background-image: -moz-linear-gradient( -90deg, rgb(129,200,241) 0%, rgba(201,219,255,0) 100%);
+	background-image: -webkit-linear-gradient( -90deg, rgb(129,200,241) 0%, rgba(201,219,255,0) 100%);
+	background-image: -ms-linear-gradient( -90deg, rgb(129,200,241) 0%, rgba(201,219,255,0) 100%);
+}
+.auth_tab_content {
+    min-height: 280px;
+}
+.auth-language {
+    float: right;
+    margin-top: 22px;
+    font-size: 14px;
+    margin-right: 200px;
+}
+/*****温馨提示-扫码登录****/
+body{
+	-webkit-font-smoothing: antialiased;
+    /*-webkit-text-stroke-width: .2px;*/
+    -moz-osx-font-smoothing: grayscale;
+}
+.scan_code_pic .reminderbox{
+	text-align: left;
+}
+.scan_code_pic .reminderbox .reminder-tit{
+	color:#666;
+	font-weight: bold;
+}
+.scan_code_pic .reminderbox a{
+	color:#1ab394;
+	cursor:pointer;
+}
+.scan_code_pic .reminderbox a:hover{
+	color:#0f8b72;
+	-o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+}
+
+.scan_code_pic .reminderbox .reminder-tit{
+	margin-top: 20px;
+}
+.scan_code_pic .reminderbox p{
+    margin-bottom: 4px;
+	color:#666;
+}
+.scan_code_pic .code-reminder{
+	margin-top: 6px;
+    letter-spacing: 1px;
+}
+
+.import-tit{
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.import-tit h2{
+	font-size:13px;
+	color:#666;
+	margin: 0;
+    margin-bottom: 5px;
+}
+.import-tit span{
+	font-size:12px;
+	color:#666;
+	display: inline-block;
+    line-height: 18px;
+    margin-bottom: 4px;
+}
+.auth_login_forgetp{
+	float:right;
+}
+.login-way-bd .qqway-icon {
+    background: url(https://webvpn.ujs.edu.cn/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/images/qq.png) no-repeat;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+	display: block;
+}
+.login-way-bd .wxway-icon {
+    background: url(https://webvpn.ujs.edu.cn/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/images/wx.png) no-repeat;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+	display: block;
+}
+.other-login-way .box-line-tit {
+    font-size: 13px;
+    color: #838383;
+    text-align: center;
+    position: relative;
+}
+.box-line-tit:after, .box-line-tit:before {
+    position: absolute;
+    width: 16%;
+    height: 0;
+    content: '';
+    border-top-width: 1px;
+    border-top-style: solid;
+    top: 10px;
+    left: 0;
+}
+.box-line-tit:after, .box-line-tit:before {
+    border-top-color: #aaa9a9;
+}
+.box-line-tit:before {
+    left: inherit;
+    right: 0;
+}
+.other-login-way .login-way-bd {
+    text-align: center;
+    margin: 12px auto;
+}
+.other-login-way .login-way-bd .way-item {
+    display: inline-block;
+    margin: 0 6px;
+    text-align: center;
+}
+.other-login-way .login-way-bd .way-item span {
+    display: block;
+    color: #28abcc;
+    font-size: 14px;
+}
+
+.auth_tab_links li.selected span {
+	font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #69696b;
+}
+.auth_login_content {
+    margin-top: 30px;
+    height: 400px;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("https://webvpn.ujs.edu.cn/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/images/iconfont/iconfont.eot");
+  src: url("https://webvpn.ujs.edu.cn/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/images/iconfont/iconfont.eot#iefix") format('embedded-opentype'),
+      url("https://webvpn.ujs.edu.cn/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/images/iconfont/iconfont.woff2") format('woff2'),
+      url("https://webvpn.ujs.edu.cn/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/images/iconfont/iconfont.woff") format('woff'),
+      url("https://webvpn.ujs.edu.cn/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/images/iconfont/iconfont.ttf") format('truetype'),
+      url("https://webvpn.ujs.edu.cn/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/images/iconfont/iconfont.svg#iconfont") format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

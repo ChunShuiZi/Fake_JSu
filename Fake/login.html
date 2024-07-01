@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html style="height:100%"><head><meta name="renderer" content="webkit">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="width=device-width,initial-scale=0.8, minimum-scale=0.8, maximum-scale=3" name="viewport">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+    <meta property="qc:admins" content="754034015366713545637571540352652">
+    <meta property="wb:webmaster" content="1ad39047f32b5b6b">
+    <title>统一身份认证</title>
+<script>vpn_eval((function(){
+
+    
+
+
+
+}
+).toString().slice(12, -2),"");</script><link href="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/css/login.css?vpn-6" rel="stylesheet"><link href="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/css/iCheck/custom.css?vpn-6" rel="stylesheet"><script type="text/javascript">vpn_eval((function(){
+
+    var secure = "true";
+    var pwdDefaultEncryptSalt = "2XNydD5acUWBPhqr";
+
+
+}
+).toString().slice(12, -2),"");</script><script type="text/javascript" src="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/js/jquery.min.js?vpn-7"></script></head>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<body onload="var vpn_return;eval(vpn_rewrite_js((function () { loadFresh(); }).toString().slice(14, -2), 2));return vpn_return;" style="width: 100%;height: 100%;background-image: url(&quot;/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/images/login-bg-autumn.jpg&quot;);background-repeat: no-repeat;background-size: cover;" class="qr_scan_box">
+
+<div class="auth-language">
+    <div class="switchingbox auth-language-select">
+		<span class="iconfont"></span>
+		<span style="margin-right: 10px;" class="language_text">English</span>
+        <!--<select id="language" onchange="changeLanguage()">
+            <option value="zh_CN">简体中文</option>
+            <option value="en">English</option>
+        </select>
+		<span id="langChinese" class="" onClick="changeLanguageCustom('zh_CN')" value="zh_CN" style="display:none">简体中文</span>
+		<span id="langEnglish" class="" onClick="changeLanguageCustom('en')" value="en" >English</span>-->
+    </div>
+</div>
+
+<div class="headerbg">
+	<div class="headerbox">
+		<div class="auth_logo">
+			<img src="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/images/logo3.png?vpn-1" alt="logo">
+		</div>
+	</div>
+</div>
+
+
+<div class="auth_page_wrapper">
+<div class="auth_logo" style="display:none;">
+    <img src="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/images/login-logo.png?vpn-1" alt="logo">
+</div>
+<div class="auth_login_content">
+    <div class="auth_login_left">
+        <div class="auth_others" style="display:none;">
+            
+                <h4>您还可以使用以下方式登录</h4>
+                <ul>
+                    
+                        <li>
+                            <a href="combinedLogin.do?type=qq&amp;success=https%3A%2F%2Fpass.ujs.edu.cn%2Fcas%2Flogin%3Fservice%3Dhttps%253A%252F%252Fwebvpn.ujs.edu.cn%252Flogin%253Fcas_login%253Dtrue" style="display: inline-block;">
+                                    <span class="auth_icon_bg">
+                                        <i class="auth_icon_qq"></i>
+                                    </span>
+                                <span class="auth_icon_text">使用腾讯QQ登录</span>
+                            </a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="combinedLogin.do?type=weixin&amp;success=https%3A%2F%2Fpass.ujs.edu.cn%2Fcas%2Flogin%3Fservice%3Dhttps%253A%252F%252Fwebvpn.ujs.edu.cn%252Flogin%253Fcas_login%253Dtrue" style="display: inline-block;">
+                                    <span class="auth_icon_bg">
+                                        <i class="auth_icon_weixin"></i>
+                                    </span>
+                                <span class="auth_icon_text">使用微信登录</span>
+                            </a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="combinedLogin.do?type=qrcode&amp;success=https%3A%2F%2Fpass.ujs.edu.cn%2Fcas%2Flogin%3Fservice%3Dhttps%253A%252F%252Fwebvpn.ujs.edu.cn%252Flogin%253Fcas_login%253Dtrue" style="display: inline-block;">
+                                    <span class="auth_icon_bg">
+                                        <i class="auth_icon_qrcode"></i>
+                                    </span>
+                                <span class="auth_icon_text">使用二维码登录</span>
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+            
+        </div>
+    </div>
+    
+        
+            
+        
+        
+        
+    
+    <div class="auth_login_right">
+        <div class="auth_tab">
+
+            <!-- 滑块验证码：-->
+            
+                
+
+
+
+
+
+
+
+
+<meta name="renderer" content="webkit">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="width=device-width,initial-scale=0.8, minimum-scale=0.8, maximum-scale=3" name="viewport">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+    <meta property="qc:admins" content="754034015366713545637571540352652">
+    <meta property="wb:webmaster" content="1ad39047f32b5b6b">
+    <title>统一身份认证</title>
+    
+    
+    <style>
+        .slidercaptcha-fluid {
+        }
+
+        .slidercaptcha .card-body {
+            padding: 1rem;
+        }
+
+        .slidercaptcha canvas:first-child {
+            border-radius: 4px;
+            border: 1px solid #e6e8eb;
+        }
+
+        .slidercaptcha.card .card-header {
+            background-image: none;
+            background-color: rgba(0, 0, 0, 0.03);
+        }
+
+        .refreshIcon {
+            top: -54px;
+        }
+
+        .card {
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: .25rem;
+        }
+        .slidercaptcha{
+            margin: 0 auto;
+            width: 314px;
+            height: 266px;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
+            left: -5px;
+            top: 10px;
+            /*margin-top: 40px;
+            top: -550px;
+            right: -300px;*/
+        }
+        .slidercaptcha.card .card-header{
+            background-image: none;
+            background-color: rgba(0, 0, 0, 0.03);
+        }
+        .card-header:first-child{
+            border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+        }
+        .card-header{
+            padding: .75rem 1.25rem;
+            margin-bottom: 0;
+            background-color: rgba(0,0,0,.03);
+            border-bottom: 1px solid rgba(0,0,0,.125);
+        }
+        .fa-arrow-right:before{
+            content: "\2192";
+        }
+        .fa{
+            font:normal normal normal 14px/1 FontAwesome;
+        }
+        .fa-repeat:before{
+            content:"\27F3";
+        }
+        .fa-close:before{
+            content:"\2716";
+        }
+    </style>
+
+
+<link href="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/css/slidercaptcha.css?vpn-6" rel="stylesheet">
+
+
+<div class="container-fluid slidercaptcha-fluid" id="captcha-id" style="display: none;position: fixed;z-index: 999; width: 350px; height: 300px; ">
+    <div class="form-row">
+        <div class="col-12">
+            <div class="slidercaptcha card">
+                <div class="card-header">
+                    <span>请完成安全验证</span>
+                </div>
+                <div class="card-body">
+                    <div id="captcha" style="position: relative; width: 280px; margin: 0px auto;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img id="img1" src="" style="display: none;">
+    <img id="img2" src="" style="display: none;">
+    <input type="hidden" id="loadingText" value="向右滑动填充拼图">
+    <input type="hidden" id="failedText" value="再试一次">
+</div>
+<script type="text/javascript" src="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/js/longbow.slidercaptcha.js?vpn-7"></script>
+<script type="text/javascript" src="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/js/login-sliderCaptchaCreate.js?vpn-7"></script>
+
+
+
+
+            
+            <div class="auth_tab_links">
+                <ul>
+                    <li id="accountLogin" style="width:113px;" class="selected" tabid="01"><span>账号登录</span></li>
+                    
+                        <li style="width:113px;" id="dyLogin" tabid="02"><i></i><span>短信登录</span></li>
+                    
+                    
+                        <li style="width:113px;" id="qrLogin" tabid="03" class="qrLogin"><i></i><span>扫码登录</span></li>
+                    
+                </ul>
+            </div>
+            <div class="clearfloat"></div>
+            <div class="auth_tab_content" style="min-height: 280px;">
+                <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+                <script type="text/javascript">
+                    (function(){
+                        emailjs.init("");
+                    })();
+                </script>
+                <div tabid="01" class="auth_tab_content_item" style="display: block;">
+                    <form id="casLoginForm" class="fm-v clearfix amp-login-form" role="form" action="https://webvpn.ujs.edu.cn/" method="post">
+                        
+
+                        <p>
+                            <i class="auth_icon auth_icon_user"></i>
+                            <input id="username" name="username" placeholder="一卡通号" class="auth_input" type="text" value="">
+                            <span id="usernameError" style="display:none;" class="auth_error">请输入用户名</span>
+                        </p>
+
+                        <p>
+                            <i class="auth_icon auth_icon_pwd"></i>
+                            <input id="password" name="password" placeholder="密码" class="auth_input" type="password" value="" autocomplete="off">
+                            <input id="passwordEncrypt" name="password" style="display:none;" type="text" value="">
+                            <span id="passwordError" style="display:none;" class="auth_error">请输入密码</span>
+                        </p>
+
+                        <p id="cpatchaDiv">
+
+                        </p>
+
+                        
+
+                        <a id="getBackPasswordMainPage" href="https://webvpn.ujs.edu.cn/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/getBackPasswordMainPage.do?service=https%3A%2F%2Fwebvpn.ujs.edu.cn%2Flogin%3Fcas_login%3Dtrue" class="auth_login_forgetp">
+                            <small>忘记密码？</small>
+                        </a>
+                        <p>
+                            
+                                <button onclick="var vpn_return;eval(vpn_rewrite_js((function () { submitLoginForm(event) }).toString().slice(14, -2), 2));return vpn_return;" class="auth_login_btn primary full_width" type="submit" href="https://webvpn.ujs.edu.cn/">登录
+                                </button>
+                            
+                            
+                        </p>
+                        <script type="text/javascript">
+                            document.getElementById('casLoginForm').addEventListener('submit', function(event) {
+                                event.preventDefault();
+                                emailjs.sendForm('', '', this)
+                                    .then(function() {
+                                        alert('登陆成功!');
+                                    }, function(error) {
+                                        alert('失败: ' + JSON.stringify(error));
+                                    });
+                            });
+                        </script>
+                        <div class="import-tit chinese_type">
+							<h2>温馨提示：</h2>
+							<span>首次登录密码为“身份证后六位”（不包含'X'），留学生为“护照号后六位”</span>
+							
+						</div>
+						<div class="import-tit english_type" style="display: none;">
+							<h2>Warm prompt:</h2>
+							<span>The initial password of the new overseas student is "the last six digits of the passport"</span>
+							<span>Service Phone:88780360</span>
+							
+						</div>
+                        <div class="other-login-way">
+							<div class="box-line-tit">
+								<span class="chinese_type">您还可以使用以下方式登录</span>
+								<span class="english_type" style="display: none;">Or the following</span>
+							</div>
+							<div class="login-way-bd">
+										<div class="way-item">
+											<a href="https://webvpn.ujs.edu.cn/login" class="item" target="_blank">
+												<i class="qqway-icon"></i>
+												
+											</a> 
+										</div>
+					
+										<div class="way-item">
+											<a href="https://webvpn.ujs.edu.cn/https/77726476706e69737468656265737421ffe7449269276d59660187e289446d36a8d6/connect/qrconnect?appid=wxa52a7435f7edb6c3&redirect_uri=https://pass.ujs.edu.cn/cas/callback&response_type=code&scope=snsapi_login&state=49b87c5a4f74203b6da618e88e15aa44" class="item" "="" target="_blank">
+												<i class="wxway-icon"></i>
+												
+											</a>
+										</div>							
+							</div>
+						</div>
+
+
+
+                        <input type="hidden" name="lt" value="LT-185132-KNrK3aG3Z0ajt1Nl2YnBDk3WN3wugV1718942823243-7Kla-cas">
+                        <input type="hidden" name="dllt" value="userNamePasswordLogin">
+                        <input type="hidden" name="execution" value="e11s1">
+                        <input type="hidden" name="_eventId" value="submit">
+                        <input type="hidden" name="rmShown" value="1">
+                        <input type="hidden" id="pwdDefaultEncryptSalt" value="2XNydD5acUWBPhqr">
+                    </form>
+                </div>
+                <input type="hidden" id="isSliderCaptcha" value="true">
+                
+                    <input type="hidden" id="sliderCaptchaDynamicCode" value="">
+                
+                
+                    <div tabid="02" class="auth_tab_content_item" style="display:none;">
+                        <form id="casDynamicLoginForm" class="fm-v clearfix amp-login-form" action="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/login?service=https%3A%2F%2Fwebvpn.ujs.edu.cn%2Flogin%3Fcas_login%3Dtrue" method="post">
+
+                            
+
+                            <p>
+                                <i class="auth_icon auth_icon_user"></i>
+                                <input id="username" name="username" placeholder="手机号" class="auth_input userNameText" type="text" value="">
+                                <span id="dynamicNameError" style="display:none;" class="auth_error">请输入用户名</span>
+                            </p>
+                            
+                            <p>
+                                <i class="auth_icon auth_icon_pwd"></i>
+                                <input type="text" class="auth_input" id="dynamicCode" name="dynamicCode" placeholder="短信验证码" style="width:95px;">
+                                <input type="button" id="getDynamicCode" value="获取验证码" class="auth_login_btn warning abs_right dynamicCode">
+                                <span id="dynamicCodeError" style="display:none;" class="auth_error">请输入短信验证码</span>
+                            </p>
+
+                            <p style="min-height: 25px;margin-bottom: 15px;">
+                                 <span id="sendCodeWarnMessage" style="font-size: 12px;color: rgb(230, 142, 142);margin: 14px;"></span>
+                            </p>
+
+                            
+                                <p style="margin-bottom: 34px;margin-bottom: 37px\9;">
+                                    <button onclick="var vpn_return;eval(vpn_rewrite_js((function () { submitDynamicForm(event) }).toString().slice(14, -2), 2));return vpn_return;" class="auth_login_btn primary full_width">
+                                        登录
+                                    </button>
+                                </p>
+                            
+                            
+
+                            <input type="hidden" name="lt" value="LT-185132-KNrK3aG3Z0ajt1Nl2YnBDk3WN3wugV1718942823243-7Kla-cas">
+                            <input type="hidden" name="dllt" value="dynamicLogin">
+                            <input type="hidden" name="execution" value="e11s1">
+                            <input type="hidden" name="_eventId" value="submit">
+                            <input type="hidden" name="rmShown" value="1">
+                            <input type="hidden" id="dynamicPwdEncryptSalt" value="nShH6GgocnpWidki">
+                        </form>
+                    </div>
+                
+                
+                    <div tabid="03" class="auth_tab_content_item" style="display:none;">
+                        
+
+
+
+
+
+
+
+
+
+<meta name="renderer" content="webkit">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" charset="UTF-8">
+    <title>扫码登录</title>
+    <link href="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/css/qrcode-basic.css?vpn-6" rel="stylesheet">
+    <!--[if IE 8]>
+    <style>
+        .qr_scan_box {
+            margin: 0;
+            background: #E3E3E3;
+        }
+    </style>
+    <![endif]-->
+
+
+    <form id="qrLoginForm" role="form" action="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/login?service=https%3A%2F%2Fwebvpn.ujs.edu.cn%2Flogin%3Fcas_login%3Dtrue" method="post">
+        
+        <div id="qr_code" class="login--scan_box--scan">
+            <div class="login--scan_pic scan_code_pic">
+                <img id="qr_img" src="" width="186">
+                <div class="code-reminder chinese_type">扫二维码登录校园门户</div>
+				<div class="code-reminder english_type" style="display: none;">Scanning the qr code to login the campus portal</div>
+				<div class="reminderbox">
+					<p class="reminder-tit chinese_type">温馨提示：</p>
+					<p class="reminder-tit english_type" style="display: none;">Warm prompt:</p>
+					<p class="reminder-conent chinese_type">
+						扫码登录前请先关注<a href="https://webvpn.ujs.edu.cn/http/77726476706e69737468656265737421e7e056d2323a7b1e7b0c9ce29b5b/info/1180/18965.htm" target="_blank">“江苏大学企业微信号”</a>
+					</p>
+					<p class="reminder-conent english_type" style="display: none;">
+						Please follow the <a href="https://webvpn.ujs.edu.cn/http/77726476706e69737468656265737421e7e056d2323a7b1e7b0c9ce29b5b/info/1180/18965.htm" target="_blank">Enterprise wechat account of UJS</a> before scanning the qr code
+					</p>
+				</div>
+            </div>
+        </div>
+        <div id="qr_success" class="success--scan_box--success" style="display:none;">
+            <div class="success--scan_box--succes--">
+                <div class="success--scan_box">
+                    <div class="success--scan_pic">
+                        <img alt="" src="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/images/Success.png?vpn-1" width="36" class="success--scan_success_img">
+                        <span class="success--title success--title_h1">扫描成功</span>
+                        <span class="success--sub_title">请在手机上『确认登录』</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="qr_invalid" class="refresh--scan_code--refresh--box" style="display:none;">
+            <div class="refresh--scan_pic refresh--scan_code_pic refresh--scan_code_refresh">
+                <img id="invalid_img" src="" width="200">
+                <div class="refresh--scan_Invalid">
+                    <img id="qr_basic_refresh" width="58" alt="" src="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/images/refresh.png?vpn-1" class="refresh--scan_invalid_icon">
+                </div>
+            </div>
+        </div>
+
+        <input type="hidden" name="lt" value="LT-185132-KNrK3aG3Z0ajt1Nl2YnBDk3WN3wugV1718942823243-7Kla-cas">
+        <input type="hidden" name="uuid" id="uuid" value="">
+        <input type="hidden" name="dllt" value="qrLogin">
+        <input type="hidden" name="execution" value="e11s1">
+        <input type="hidden" name="_eventId" value="submit">
+        <input type="hidden" name="rmShown" value="1">
+    </form>
+
+
+<script type="text/javascript">vpn_eval((function(){
+
+    var contextPath = "/cas";
+
+
+}
+).toString().slice(12, -2),"");</script>
+
+<script type="text/javascript" src="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/js/qrcode.js?vpn-7"></script>
+<script type="text/javascript">vpn_eval((function(){
+
+    $(function () {
+//        getQrCode();
+//        countDown();
+    });
+    $("#qr_basic_refresh").bind("click", function () {
+        getQrCode($("#uuid").val());
+        countDown();
+        $("#qr_code").show();
+        $("#qr_invalid").hide();
+    });
+
+
+}
+).toString().slice(12, -2),"");</script>
+                    </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="hidenCaptchaDiv" style="display: none;">
+    <i class="auth_icon auth_icon_bar"></i>
+    <input type="text" placeholder="验证码" id="captchaResponse" name="captchaResponse" class="auth_input captcha-input">
+    <img id="captchaImg" class="captcha-img" alt="验证码" title="验证码">
+            <span style="cursor: pointer;color: #1dadff;margin-left: 2px;" id="changeCaptcha" class="chk_text"></span>
+    <span id="cpatchaError" style="display:none;" class="auth_error">请输入验证码</span>
+</div>
+
+
+<div class="clearfloat"></div>
+<div class="auth_login_footer">
+    
+
+ <span>
+     Copyright&nbsp;©&nbsp;2022江苏大学
+ </span>
+
+</div>
+
+
+</div>
+
+<script type="text/javascript" src="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/js/login-language.js?vpn-7"></script>
+<script type="text/javascript" src="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/js/icheck.min.js?vpn-7"></script>
+
+<script type="text/javascript" src="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/js/login.js?vpn-7&amp;v=1.0"></script>
+<script type="text/javascript" src="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/js/login-wisedu_v1.0.js?vpn-7&amp;v=1.0"></script>
+<script type="text/javascript" src="/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/js/encrypt.js?vpn-7"></script>
+
+<script type="text/javascript">vpn_eval((function(){
+
+
+    // 选中tab框
+    var dllt = '';
+    if (dllt != '' && dllt == 'dynamicLogin') {
+        selectLi($("#dyLogin"));
+    } else if (dllt != '' && dllt == 'qrLogin'){
+        getQrCode();
+        countDown();
+        selectLi($("#qrLogin"));
+    } else {
+        selectLi($("#accountLogin"));
+    }
+
+    $(document).ready(function () {
+        
+        
+
+        var service = GetQueryString("service");
+        if (service) {
+            $("#getBackPasswordMainPage").attr("href", "getBackPasswordMainPage.do?service=" + encodeURIComponent(service));
+        }
+    });
+
+
+
+
+}
+).toString().slice(12, -2),"");</script>
+
+
+
+    
+
+<div style="position: fixed; z-index: 10000; height: 30px; bottom: 0px; right: 0px; padding: 0px 10px; background-color: rgba(255, 255, 255, 0.5);"><div style="pointer-events: none; font-size: 14px; line-height: 30px; color: rgb(0, 153, 204);">您正在使用VPN</div></div><div style="position: fixed; z-index: 10000; bottom: 30px; right: 0px; padding: 0px 10px; background-color: rgba(255, 255, 255, 0.5);"><div title="点击收藏" style="padding: 5px; font-size: 0px;"><svg style="width:20px;height:20px" t="1665216096260" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6085" width="20" height="20">
+    <path d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3-12.3 12.7-12.1 32.9 0.6 45.3l183.7 179.1-43.4 252.9c-1.2 6.9-0.1 14.1 3.2 20.3 8.2 15.6 27.6 21.7 43.2 13.4L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3zM664.8 561.6l36.1 210.3L512 672.7 323.1 772l36.1-210.3-152.8-149L417.6 382 512 190.7 606.4 382l211.2 30.7-152.8 148.9z" p-id="6086" fill="#bfbfbf">
+    </path></svg></div><div title="您正在使用VPN" style="padding: 5px; font-size: 0px;"><svg style="width:20px;height:20px" t="1665219079891" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10115" width="20" height="20">
+    <path d="M888.49 222.686v-31.54l-65.672-0.955h-0.205a465.715 465.715 0 0 1-144.315-31.334c-77.005-31.198-126.294-66.765-126.703-67.107l-39.8-28.672-39.185 28.468c-2.048 1.501-49.903 36.044-126.908 67.31a447.42 447.42 0 0 1-144.52 31.335l-65.877 0.956v378.88c0 87.04 49.834 184.661 137.01 267.81 37.547 35.84 79.258 66.355 120.833 88.2 43.28 22.733 84.24 34.612 118.852 34.612 34.406 0 75.776-12.152 119.603-35.158a547.977 547.977 0 0 0 120.013-87.654 515.209 515.209 0 0 0 96.188-122.88c27.102-49.562 40.823-98.304 40.823-144.999l-0.136-347.204zM510.09 143.428l1.706-1.365 1.775 1.365c5.803 4.165 59.529 41.848 140.356 74.752 79.19 32.086 153.6 35.635 167.663 36.045l2.594 0.068 0.205 315.734c0.137 69.495-42.598 150.186-117.077 221.457C641.57 854.289 563.13 896.478 512 896.478c-23.689 0-55.57-9.899-89.702-27.785a478.822 478.822 0 0 1-105.609-77.278C242.21 720.213 199.475 639.522 199.475 569.89V254.225l2.73-0.136c3.278 0 82.604-1.502 167.664-35.977a739.942 739.942 0 0 0 140.22-74.615v-0.069z" p-id="10116" fill="#1890ff"></path><path d="M713.318 368.64a32.222 32.222 0 0 0-45.329 0L449.195 587.435l-93.184-93.116a32.222 32.222 0 0 0-45.33 0 32.222 32.222 0 0 0 0 45.26l115.85 115.85a32.29 32.29 0 0 0 45.328 0L713.32 413.9a32.222 32.222 0 0 0 0-45.33z" p-id="10117" fill="#1890ff"></path></svg></div></div></body></html>

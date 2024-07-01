@@ -1,0 +1,144 @@
+.qr_scan_box {
+    margin: 0;
+    background: rgba(255,255,255,0.6);
+}
+.login--scan_box--scan {
+    display:table;
+    overflow:hidden;
+    position: absolute;
+    width:100%;
+    height:100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.login--scan_box--scan >.login--scan_pic {
+    vertical-align:middle;
+    display:table-cell;
+    text-align:center;
+    top:50%;
+    left:50%;
+
+}
+
+.refresh--scan_Invalid {
+    position: absolute;
+    z-index: 10;
+    background: rgba(255,255,255,0.9);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#e5ffffff,endColorstr=#e5ffffff);
+    top: 0;
+    /* margin: 45px 0 0 74px; */
+}
+
+.refresh--scan_Invalid img {
+    position: absolute;
+    top: 50%;
+    margin-top: -29px;
+    left: 50%;
+    margin-left: -29px;
+    cursor: pointer;
+}
+
+.refresh--scan_Invalid img:hover{
+    -webkit-transform: rotate(360deg);/*鼠标hover时，i图标旋转*/
+    transform: rotate(360deg);
+    -webkit-transition: -webkit-transform 5s linear;/*transform进行动画，动画用时1秒钟*/
+    transition: -webkit-transform 2s linear;
+}
+
+.refresh--scan_code_refresh >.refresh--scan_Invalid {
+    width: 200px;
+    height: 200px;
+    top:50%;
+    left:50%;
+    margin-left:-100px;
+    margin-top:-100px;
+}
+
+.refresh--scan_code--refresh--box {
+    display:table;
+    overflow:hidden;
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+
+.refresh--scan_code--refresh--box > .refresh--scan_code_refresh {
+    vertical-align:middle;
+    display:table-cell;
+    text-align:center;
+    top:50%;
+    left:50%;
+}
+
+
+.success--scan_pic {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    vertical-align: center;
+    position: absolute;
+    width: 100%;
+    height:calc(100% - 68px);
+    padding-top: 16px;
+}
+
+
+.success--scan_pic span.success--title {
+    display: block;
+    margin-top:22px;
+    font-family: PingFangSC-Regular;
+    font-size: 20px;
+    color: #1A1A1A;
+    letter-spacing: 0;
+    margin-bottom:36px;
+}
+
+.success--scan_code_pic>img {
+    margin-top:45px;
+}
+
+.success--scan_pic span.success--sub_title {
+    display: block;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #666666;
+    letter-spacing: 0;
+}
+
+.success--scan_box {
+    width: 188px;
+    height: 196px;
+    /*background: rgba(255,255,255,0.6);*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+    position: relative;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.success--scan_box--success {
+    display:table;
+    overflow:hidden;
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+
+.success--scan_box--succes-- {
+    vertical-align:middle;
+    display:table-cell;
+    text-align:center;
+    top:50%;
+    left:50%;
+}
+.qr_auth_error {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: red;
+    z-index:9999;
+    font-size: 13px;
+    top:-19px;
+}

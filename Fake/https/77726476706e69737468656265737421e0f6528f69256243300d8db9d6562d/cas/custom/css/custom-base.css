@@ -1,0 +1,236 @@
+/* 非登陆页面 公共样式 */
+
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.body_bg {
+    background: white url("https://webvpn.ujs.edu.cn/https/77726476706e69737468656265737421e0f6528f69256243300d8db9d6562d/cas/custom/images/login-bg-autumn.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.footer .copy {
+    border-top: 0;
+}
+
+.body_bg div.errors {
+    background-color: white \9;
+    background-color: rgba(255, 255, 255, .9);
+    width: 74%;
+    margin-left: 13%;
+    border: none;
+    margin-top: 1px;
+    font-size: 12px;
+    min-height: 180px;
+    text-align: center;
+}
+.body_bg div.errors h2{
+    font-weight: 700;
+    color: #1ab394;
+    font-size: 14px;
+}
+
+.body_bg div.errors p {
+    margin-bottom: 17px;
+    margin-top: 0;
+    position: relative;
+    font-size: 16px;
+}
+
+.auth_login_footer {
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.auth_login_footer span {
+    color: #f3f3f3;
+    font-size: 12px;
+}
+
+.content_container{
+    margin-top: 120px;
+    height: 360px;
+}
+
+.tab-content {
+    width: 74%;
+    margin-left: 13%;
+}
+
+.tab-content{
+    margin-bottom: 17px;
+    margin-top: 0;
+    position: relative;
+}
+
+.ibox-content {
+    background-color:white \9;
+    background-color: rgba(255, 255, 255, .9);
+    border: none;
+    margin-top: 1px;
+    padding: 15px 25px 0px 25px;
+    font-size: 12px;
+    min-height: 180px;
+}
+
+.color-dark-green{
+    color:#1AB394;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+}
+
+
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+.button_div{
+    margin-left: 65%;
+    padding: 20px 0;
+}
+
+.button{
+    border-radius: 3px;
+    width: 100px;
+    padding: 6px;
+    border: 1px solid transparent;
+}
+
+.button_ok{
+    background-color: #1AB394;
+    border-color: #1AB394;
+    color: #FFFFFF;
+}
+
+.button_cancel{
+    background-color: #FDFCFC;
+    border-color: #DBD9D9;
+    color: #000;
+}
+
+/*按钮样式 开始*/
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn{
+    width: 100px;
+}
+
+.btn-primary {
+    background-color: #1ab394;
+    border-color: #1ab394;
+    color: #FFFFFF;
+    width: 100px;
+}
+
+.btn {
+    border-radius: 3px;
+}
+
+
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    font-size: 13px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    background-color: #18a689;
+    border-color: #18a689;
+    color: #FFFFFF;
+    width: 100px;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active{
+    background-color: #f3f3f4;
+    border-color: #ccc;
+    color: #333;
+    width: 100px;
+}
+
+
+.col-42{
+    width:41%;
+    float: left;
+    padding: 10px 10px;
+}
+
+.col-52{
+    width:52%;
+    float: left;
+    padding: 0 10px;
+}
+
+.col-half{
+    width:50%;
+    float: left;
+    padding: 0 10px;
+}
+/*错误页面样式定义*/
+.warn-content{
+    margin-top: 120px;
+}
+
+.warn{
+    min-height: 111px;
+    text-align: center;
+}
+.warn h4{
+    color: #1ab394;
+}
+
+.warn p{
+    line-height: 40px;
+}
+
+.welcome-button p{
+    padding-bottom: 17px;
+    text-align: center;
+    margin: 0;
+}
+/*错误页面样式定义*/
+/*版权样式*/
+.auth_login_footer {
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.auth_login_footer span {
+    color: #f3f3f3;
+    font-size: 12px;
+}
+/*版权样式*/
